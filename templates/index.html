@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriNova</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="navbar">
+    <h1 class="h1">AgriNova</h1>
+    <div><button class="bttn">Home</button></div>
+    <div><button class="bttn">Dashboard</button></div>
+    <div>
+      <a href="{{ url_for('leaderboard')}}"><button class="bttn">Leaderboard</button>
+      </a></div>
+    <div class="language-switcher">
+      <button class="lang-btn" id="languageBtn">
+        <i class="fas fa-globe"></i>
+        <a href="{{url_for('hindi')}}">
+        <span id="languageText">English</span>
+        </a>
+      </button>
+    </div>
+    <div class="profile-container">
+      <button class="bttn profile-btn">
+        <i class="fas fa-user"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Farm <span style="color:green;">Smart</span><br>Earn Rewards</h1>
+      <p><span style="color:white;">
+        Complete real farming tasks, climb leaderboards,<br>
+        and earn rewards while revolutionizing agriculture with AI-powered insights.</span>
+      </p>
+      <button class="btn btn-success">Start Farming →</button>
+      <button class="btn btn-light">
+        <a href="{{url_for('leaderboard')}}">View Leaderboard
+          </a>
+        </button>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>How It Works?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>1. Complete Tasks</h3>
+        <p>Receive AI-powered farming tasks tailored to your location and crops.</p>
+      </div>
+      <div class="feature">
+        <h3>2. Earn Points</h3>
+        <p>Gain points for each completed task and track your progress.</p>
+      </div>
+      <div class="feature">
+        <h3>3. Climb Leaderboards</h3>
+        <p>Compete with other farmers in your region and globally.</p>
+      </div>
+      <div class="feature">
+        <h3>4. Get Rewards</h3>
+        <p>Redeem your points for discounts on farming supplies and equipment.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>About AgriNova</h2>
+    <p>AgriNova combines traditional farming wisdom with cutting-edge AI technology to help farmers maximize their yields while promoting sustainable practices. Our platform provides personalized recommendations, tracks your progress, and rewards you for implementing sustainable farming techniques.</p>
+    <p>Join thousands of farmers who are already using AgriNova to transform their farming operations and earn rewards for their efforts.</p>
+  </div>
+
+  
+</body>
+<footer>
+    <p>🌍 Smart India Hackathon 2025 | Government of Kerala | Department of Agriculture</p>
+  </footer>
+</html>
