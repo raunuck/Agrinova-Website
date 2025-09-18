@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard - AgriNova</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1 class="h1">AgriNova</h1>
+    <div>
+      <a href="index.html"><button class="bttn">Home</button>
+      </a></div>
+    <div><button class="bttn">Dashboard</button></div>
+    <div><button class="bttn">Leaderboard</button></div>
+    <div class="profile-container">
+      <button class="bttn profile-btn">
+        <i class="fas fa-user"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Leaderboard Content -->
+  <div class="leaderboard-container">
+    <div class="leaderboard-header">
+      <h2><i class="fas fa-trophy"></i> Farming Leaderboard</h2>
+      <p>See how you rank among other farmers in your region</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="region">Region:</label>
+        <select id="region">
+          <option value="all">All Regions</option>
+          <option value="north">Northern Region</option>
+          <option value="south">Southern Region</option>
+          <option value="east">Eastern Region</option>
+          <option value="west">Western Region</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="timeframe">Timeframe:</label>
+        <select id="timeframe">
+          <option value="weekly">This Week</option>
+          <option value="monthly">This Month</option>
+          <option value="alltime">All Time</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="leaderboard-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Farmer</th>
+            <th>Points</th>
+            <th>Tasks Completed</th>
+            <th>Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              <div class="farmer-info">
+                <div class="avatar"><i class="fas fa-user"></i></div>
+                <span>Farmer Name</span>
+              </div>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td>Region Name</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="leaderboard-actions">
+      <button class="btn-primary">View My Stats</button>
+      <button class="btn-secondary">Share Leaderboard</button>
+    </div>
+  </div>
+</body>
+<footer>
+    <p>🌍 Smart India Hackathon 2025 | Government of Kerala | Department of Agriculture</p>
+  </footer>
+</html>
